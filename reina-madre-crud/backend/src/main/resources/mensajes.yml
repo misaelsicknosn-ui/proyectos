@@ -1,0 +1,6 @@
+#Errores globales
+ERR_500: <strong>&iexcl;Error&excl;</strong> Ocurri&oacute; un error interno, favor de contactar al administrador.
+ERR_400: <strong>&iexcl;Error&excl;</strong> Solicitud incorrecta, favor de contactar al administrador.
+
+#Errores de Negocio
+MSJ_001: <strong>&iexcl;Felicidades&excl;</strong> La operaci&oacute;n fue realizada con &eacute;xito.

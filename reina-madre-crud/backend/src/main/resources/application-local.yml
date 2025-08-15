@@ -1,0 +1,41 @@
+logging:
+  file:
+    name: /logs/reinamadre/ms-citas.log
+  level:
+    root: info
+    mx.reinamadre.citas: debug
+server:
+  port: 9002
+#  servlet:
+#    context-path: /catalogos
+config:
+  jwtsecret: Q5HyarHHq1cU5aU
+
+springdoc:
+  swagger-ui:
+    enabled: true
+    path: /swagger-ui.html
+    disable-swagger-default-url: true
+    display-request-duration: true
+    operations-sorter: alpha
+    tags-sorter: alpha
+    doc-expansion: none
+    syntax-highlight:
+      activated: true
+    try-it-out-enabled: true
+    filter: true
+    default-model-expand-depth: 1
+    default-models-expand-depth: 1
+  api-docs:
+    path: /api-docs
+    enabled: true
+    groups:
+      enabled: true
+  packages-to-scan: mx.reinamadre.citas.controller
+  paths-to-match: /**
+  default-consumes-media-type: application/json
+  default-produces-media-type: application/json
+  model-and-view-allowed: true
+  writer-with-default-pretty-printer: true
+  cache:
+    disabled: false

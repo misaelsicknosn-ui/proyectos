@@ -1,0 +1,20 @@
+spring:
+  profiles:
+    default: local
+  application:
+    name: ms-citas
+  config:
+    import: classpath:mensajes.yml, optional:application-info.properties
+  datasource:
+    url: jdbc:sqlite:database/citas.db
+    driver-class-name: org.sqlite.JDBC
+  jpa:
+    database-platform: mx.reinamadre.citas.configuracion.SQLiteCustomDialect
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+
+api:
+  info:
+    nombre: ${project.artifactId}
+    version: ${project.version}
